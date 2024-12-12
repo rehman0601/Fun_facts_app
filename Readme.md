@@ -19,4 +19,4 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-https://github.com/rehman0601/Fun_facts_app.git
+   https://github.com/rehman0601/Fun_facts_app.git
