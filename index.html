@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universe Facts</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #f4f4f9;
+    }
+
+    .fact-container {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #ffffff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<div id="factContainer" class="fact-container">
+    <p id="factText">Click the button to learn facts about the universe!</p>
+</div>
+<button onclick="showNextFact()">Next Fact</button>
+<script>
+    const facts = [
+        {"id": 1, "fact": "The universe is about 13.8 billion years old."},
+        {"id": 2, "fact": "The observable universe is approximately 93 billion light years in diameter."},
+        {"id": 3, "fact": "There are at least 100 billion galaxies in the observable universe."},
+        {"id": 4, "fact": "The largest known galaxy, IC 1101, is over 50 times the size of the Milky Way."},
+        {"id": 5, "fact": "Dark energy is thought to make up about 68% of the universe."},
+        {"id": 6, "fact": "Dark matter makes up about 27% of the universe."},
+        {"id": 7, "fact": "The remaining 5% of the universe consists of ordinary matter."},
+        {"id": 8, "fact": "The cosmic microwave background radiation is a remnant from the early universe."},
+        {"id": 9, "fact": "The universe is expanding at an accelerating rate."},
+        {"id": 10, "fact": "The first stars appeared about 100 million years after the Big Bang."},
+        {"id": 11, "fact": "Black holes can have masses ranging from a few times the mass of the Sun to billions of times the mass."},
+        {"id": 12, "fact": "The Milky Way galaxy will eventually collide with the Andromeda galaxy."},
+        {"id": 13, "fact": "Neutron stars are so dense that a sugar-cube-sized amount of material would weigh about a billion tons on Earth."},
+        {"id": 14, "fact": "The largest known star, UY Scuti, is about 1,700 times the size of the Sun."},
+        {"id": 15, "fact": "The universe has no center and no edge."},
+        {"id": 16, "fact": "The temperature of the cosmic microwave background is about 2.725 degrees above absolute zero."},
+        {"id": 17, "fact": "The universe may be one of many, potentially part of a multiverse."},
+        {"id": 18, "fact": "The first confirmed exoplanet was discovered in 1992."},
+        {"id": 19, "fact": "Helium was first detected in the Sun before it was found on Earth."},
+        {"id": 20, "fact": "The Voyager 1 spacecraft is the most distant human-made object from Earth."}
+    ];
+
+    function showNextFact() {
+        const factText = document.getElementById('factText');
+        const randomIndex = Math.floor(Math.random() * facts.length);
+        factText.innerText = facts[randomIndex].fact;
+    }
+</script>
+</body>
+</html>
