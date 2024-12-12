@@ -19,4 +19,5 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/universe-facts.git
+[   git clone https://github.com/yourusername/universe-facts.git
+](https://github.com/rehman0601/Fun_facts_app.git)
